@@ -1,0 +1,33 @@
+# Build directory
+build/
+
+# Generated compiler
+bin/p1x3
+
+# Generated libraries
+lib/hitechc/*.lib
+lib/msx/*.lib
+lib/msx/*.obj
+
+# Intermediate files
+*.i
+*.p1
+*.as
+*.asm
+*.obj
+*.sym
+*.map
+
+# Temporary files
+*.tmp
+*~
+*.bak
+*.swp
+
+# Editor directories
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
