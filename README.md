@@ -274,6 +274,8 @@ belong to the legal owner - Microchip Technology Inc. and its subsidiaries.
 
 ## License
 
-This toolchain aggregates multiple projects with different licenses. Please refer to the individual project repositories for specific licensing terms.
+This project is licensed under the **GNU General Public License v3.0** (GPL-3.0).
 
-The build scripts and integration work in this repository are provided as-is for educational and development purposes.
+See the [LICENSE](LICENSE) file for details.
+
+Note: This toolchain incorporates code from multiple upstream projects. The original Hi-Tech C compiler is provided free of charge by Microchip Technology Inc. Please refer to the "Original Copyright Notice" section and individual project repositories for their specific licensing terms.
