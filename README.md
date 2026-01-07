@@ -65,7 +65,12 @@ HITECH_TOOLCHAIN/
 │   ├── 01_make_hitechc_compiler.sh
 │   ├── 02_make_hitechc_library.sh
 │   └── 03_make_msx_library.sh
-└── Makefile                       # Main build system
+├── setting_sharksym_library.sh    # Sharksym library setup script
+├── Makefile                       # Main build system
+│
+├── lib/sharksym/                  # [Optional] Sharksym MSX libraries
+├── examples/sharksym/             # [Optional] Sharksym example projects
+└── doc/sharksym/                  # [Optional] Sharksym documentation
 ```
 
 ## Building
@@ -217,6 +222,17 @@ This toolchain is based on the following open source projects:
 - **Repository**: https://github.com/msx-solis/HI-TECH-Z80-C-Cross-Compiler-msx
 - **Description**: MSX-specific libraries, headers, and CRT startup files
 - **License**: See repository for details
+
+### Sharksym MSX-DOS Libraries (Optional)
+- **Repository**: https://github.com/sharksym/CPMEMU_HI-TECH_C
+- **Author**: Yeongman Seo (sharksym)
+- **Description**: MSX-DOS, MSX-DOS2 libraries with R800 instruction, V9958 Graphics, ISR, TSR support
+- **Installation**: Run `./setting_sharksym_library.sh`
+- **Location**:
+  - `lib/sharksym/` - Library files (.LIB, .H, .O) and Banking Toolkit source (BL*.C)
+  - `examples/sharksym/` - Example projects (0HELLO, 2TETRIS, etc.)
+  - `doc/sharksym/` - Hi-Tech Z80 v3.09 documentation
+- **License**: Free for any use, private or commercial, strictly as-is
 
 ### Decompiled Compiler Tools
 The native Linux tools were built from decompiled/restored source code:
